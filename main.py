@@ -10,14 +10,20 @@ def main():
     some_color = (255, 0, 0)
 
     while True:
+
+        # Handle events
         ev = pygame.event.poll()
         if ev.type == pygame.QUIT:
             break
 
-        main_surface.fill((0, 200, 255))
+        # Update game state
+        # TODO
 
+        # Draw surface
+        main_surface.fill((0, 200, 255))
         main_surface.fill(some_color, small_rect)
 
+        # Show surface
         pygame.display.flip()
 
     pygame.quit()
