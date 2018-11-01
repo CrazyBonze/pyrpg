@@ -1,10 +1,18 @@
+import time
 import pygame
+import logging
+from configparser import ConfigParser
+from config import Config
+from game import Game
+
 
 def main():
     pygame.init()
     surface_sz = 480
 
-    main_surface = pygame.display.set_mode((surface_sz, surface_sz))
+    main_surface = pygame.display.set_mode(
+        (surface_sz, surface_sz),
+        pygame.HWSURFACE | pygame.DOUBLEBUF)
 
     small_rect = (300, 200, 150, 90)
     some_color = (255, 0, 0)
@@ -29,4 +37,7 @@ def main():
     pygame.quit()
 
 if __name__ == '__main__':
-    main()
+    config = Config()
+    logging.basicConfig(level=logging.INFO)
+    g = Game(debug=config['DEFAULT'].getboolean('debug'))
+    g.run()

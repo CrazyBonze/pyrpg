@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "43c3b2f0600bd130d7d7c0eca6d68c5b3be68ed01e36a376223bf7522f93b5bb"
+            "sha256": "b57542f7f8a6610327b800ea87e771a8379f9b90d150ec7e465e60bc77321117"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -45,6 +45,13 @@
             ],
             "index": "pypi",
             "version": "==1.9.4"
+        },
+        "pygame-assets": {
+            "hashes": [
+                "sha256:b417c26cf628c21e557becc3b729afe8e1a25d8fe11421230398d65b582e8c5f"
+            ],
+            "index": "pypi",
+            "version": "==0.1"
         },
         "sqlalchemy": {
             "hashes": [

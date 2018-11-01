@@ -8,6 +8,7 @@ name = "pypi"
 [packages]
 pygame = "*"
 sqlalchemy = "*"
+pygame-assets = "*"
 
 [requires]
 python_version = "3.5"
